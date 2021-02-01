@@ -10,11 +10,11 @@ const UploadProductPage = () => {
 
     const titleChangeHandler=(e)=>{
         setTitle(e.currentTarget.value)
-    }
+    };
 
     const descriptionChangeHandler=(e)=>{
         setTitle(e.currentTarget.value)
-    }
+    };
 
     return (
         <div>
