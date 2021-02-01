@@ -5,7 +5,7 @@
 
 ## front  
 ### 기능 별 페이지
-- 업로드 페이지: Drop-Zone을 사용하여 이미지 업로드 및 데이터 전송
+- 업로드 페이지: Drop-Zone을 사용하여 이미지 업로드 및 데이터 전송 [/product/upload]
 - 랜딩 페이지:  
    1. DB 내의 모든 상품 정보 리스트 UI 노출
    2. antd 캐루셀 사용으로 상품 이미지 슬라이드  
@@ -46,3 +46,4 @@ productSchema.index({
 ```
 
 #### stydy 정리
+- event.currentTarget.value 와 event.target.value 차이
