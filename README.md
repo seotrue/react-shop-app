@@ -45,5 +45,12 @@ productSchema.index({
 })
 ```
 
+**Schema**
+- 스키마는 컴퓨터 프로그래밍에서 데이터 베이스의 조직이나 구조를 의미
+- DB 내에 어떤 구조로 데이터에 저장되느가를 나타내는 데이테베이스 구조를 스키마라구 한다.
+
+1. 아래 server.js 코드에서 exerciseRouter 와 userRouter 를 불러와 app.use()를 사용해 경로 지정 후 router 파일을 설정합니다.
+2. users.js 코드에서 Router 모듈을 설정하고 user.model.js를 불러옵니다.
+3. model에서 Schema는 mongoose 모듈을 불러와 mongoose.Schema 를 인스턴스화 하여 새로운 userSchema의 필드를 설정 해줍니다.
 #### stydy 정리
 - event.currentTarget.value 와 event.target.value 차이

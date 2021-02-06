@@ -11,7 +11,7 @@ const productSchema = mongoose.Schema({
         maxlength: 50
     },
     description: {
-        type: String
+        type: String,
     },
     price: {
         type: Number,
@@ -21,31 +21,33 @@ const productSchema = mongoose.Schema({
         type: Array,
         default: []
     },
-    continents: {
-        type: Number,
-        default: 1
-    },
     sold: {
         type: Number,
         maxlength: 100,
         default: 0
     },
+
+    continents: {
+        type: Number,
+        default: 1
+    },
+
     views: {
         type: Number,
         default: 0
     }
 }, { timestamps: true })
 
-
-productSchema.index({ 
-    title:'text',
-    description: 'text',
+productSchema.index({
+    title: 'text',
+    description: 'text'
 }, {
     weights: {
-        name: 5,
-        description: 1,
+        title: 5,
+        description: 1
     }
 })
+
 
 const Product = mongoose.model('Product', productSchema);
 
